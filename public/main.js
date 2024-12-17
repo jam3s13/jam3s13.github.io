@@ -57,13 +57,13 @@ function scrollToBottom(){
 
 messageInput.addEventListener('focus', (e) =>{
     socket.emit('feedback', {
-        feedback: `${nameInput.value} is typing a message`
+        feedback: `${nameInput.value} esta escribiendo ...`
     })
 })
 
 messageInput.addEventListener('keypress', (e) => {
     socket.emit('feedback', {
-        feedback: `${nameInput.value} is typing a message`
+        feedback: `${nameInput.value} esta escribiendo ...`
     })
 })
 messageInput.addEventListener('blur', (e) => {
